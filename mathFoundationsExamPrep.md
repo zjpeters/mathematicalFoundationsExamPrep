@@ -67,7 +67,8 @@
     - Matrix $A$ must be square symmetric, i.e. $n\times n$, with each 
 
     $Q_A = x^T * A * x$
-    - where x is a vector $\begin{pmatrix} x\\ y \end{pmatrix}$ of length $n$
+    - where x is a vector 
+    $\begin{pmatrix} x\\ y \end{pmatrix}$ of length $n$
 - Gradient vector and hessian matrix organization
     - Gradient vector is a vector of the first order partial derivatives
     
