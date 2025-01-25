@@ -1,0 +1,69 @@
+# Topics covered on previous exams
+- Vectors
+    - Compute length and angle of vectors
+    - Compute the products of uv^T and u^T*v, decide if two vectors are perpendicular,
+    - Show linear independence
+    - write a vector as a linear combination of other vectors
+    - normalize vector
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018A, 2020, 2021]
+- Matrices
+    - multiplication
+    - transposition
+    - Calculating determinant
+    - inversion
+    - Hurwitz criterion, finding a variable for which a matrix is pos or neg definite
+    - Find matrix A that defines linear map L_A
+    - Row echelon and row reduced forms
+    - Write quadratic form Q_C(x_1,x_2) associated with matrix C
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2019, 2020]
+- Computing eigenvalues and eigenvectors
+    - Calculate characteristic polynomial
+    - Verify that a vector is an eigenvector
+    - is a matrix diagonizable
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2019, 2020, 2021]
+- Linear equations
+    - whether they have solutions and how many (none, one, infinitely many)
+    - Solve system of linear equations
+    - present in exams: [2014, 2015A, 2015 retake]
+- Find complex numbers that solve equation
+    - present in exams: [2014]
+- Derivatives and integrals (definite and indefinite)
+    - local linear approximations
+    - present in exams: [2014, 2015A, 2015 retake, 2018, 2020, 2021]
+- Differential equations
+    - Solving initial value problem
+    - Finding particular solutions
+    - finding general solution
+    - Homogenous solutions
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2018A, 2019, 2020]
+- Partial derivatives
+    - Find stationary points of f(x,y)
+    - Find/verify critical points
+    - decide whether f has local maximum or minimum at a given point
+    - Calculate gradient vector and hessian matrix
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2018A, 2019]
+- Find the euler expression 
+    - present in exams: [2015A, 2015 retake]
+- Taylor polynomial
+    - Present in exams: [2018A, 2020]
+## Likely information to include on mathematical foundations test sheet
+- Formulas to compute lengh and angle of vector
+    - Length: |u| = square root of the squares of each value in the vector
+    - angle between two vectors: arccow(a*b/(|a|*|b|))
+- equation for characteristic polynomial
+    - P(lambda) = det(A - lambda*I) of A
+        - i.e. the characteristic polynomial of A is the determinant of A minus lambda times the identity matrix
+        - the eigenvalues are the roots of the char. polynomial
+- for matrix multiplication (A * B = C) the number of columns in the first matrix (A) must equal the number or rows in the second matrix (B), the output has the number or rows of A and the number of columns of B
+    - multiply and add rows of A with columns of B
+- quadratic form of matrix
+    - Matrix (A) must be square symmetric, i.e. nXn, with each 
+    Q_A = x^T * A * x
+    - where x is each vector of A
+- Description of gradient vector and hessian matrix organization
+    - Hessian matrices which are indefinite are saddle points
+    - hessian matrices which are negative definite are local maximum
+    - hessian matrices which are positive definite are local minimum
+- Local linear approximations use taylor polynomial
+- Taylor polynomial
+    - T_n(f,x_0)(x) = sigma(i=0 to n) (f^(i)(x_0))/i! * (x-x_0)^i
