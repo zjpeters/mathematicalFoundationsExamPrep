@@ -68,8 +68,9 @@
 
     $Q_A = x^T * A * x$
     - where x is a vector of length $n$
-
-    $\begin{pmatrix} x\\ y \end{pmatrix}$ 
+```math
+\begin{pmatrix} x\\ y \end{pmatrix}$ 
+```
 - Gradient vector and hessian matrix organization
     - Gradient vector is a vector of the first order partial derivatives
     
