@@ -1,7 +1,7 @@
 # Topics covered on previous exams
 - Vectors
     - Compute length and angle of vectors
-    - Compute the products of uv^T and u^T*v, decide if two vectors are perpendicular,
+    - Compute the products of $u*v^T$ and $u^T*v$, decide if two vectors are perpendicular,
     - Show linear independence
     - write a vector as a linear combination of other vectors
     - normalize vector
@@ -46,24 +46,46 @@
     - present in exams: [2015A, 2015 retake]
 - Taylor polynomial
     - Present in exams: [2018A, 2020]
-## Likely information to include on mathematical foundations test sheet
-- Formulas to compute lengh and angle of vector
-    - Length: |u| = square root of the squares of each value in the vector
-    - angle between two vectors: arccow(a*b/(|a|*|b|))
+## Potential information to include on mathematical foundations test sheet
+-Compute the length of a vector: square root of the squares of each value in the vector
+```math
+\lVert u \rVert = \sqrt{u_1^2 + u_2^2 + ... + u_i^2}
+```
+- Compute the angle between two vectors: product of the vectors divided by the product of the lengths
+```math
+\arccos (\frac{a*b}{\lVert a \rVert * \lVert b \rVert})
+```
 - equation for characteristic polynomial
-    - P(lambda) = det(A - lambda*I) of A
-        - i.e. the characteristic polynomial of A is the determinant of A minus lambda times the identity matrix
-        - the eigenvalues are the roots of the char. polynomial
-- for matrix multiplication (A * B = C) the number of columns in the first matrix (A) must equal the number or rows in the second matrix (B), the output has the number or rows of A and the number of columns of B
+    - the characteristic polynomial of a matrix $A$ is the determinant of $A$ minus $\lambda$ times the identity matrix    
+    $P(\lambda) = det(A - \lambda * I)$
+
+
+    - the eigenvalues are the roots of the char. polynomial, i.e. the solutions to $\lambda$
+- for matrix multiplication ($A * B = C$) the number of columns in the first matrix ($A$) must equal the number or rows in the second matrix ($B$), the output ($C$) has the number or rows of $A$ and the number of columns of $B$
     - multiply and add rows of A with columns of B
 - quadratic form of matrix
-    - Matrix (A) must be square symmetric, i.e. nXn, with each 
-    Q_A = x^T * A * x
-    - where x is each vector of A
-- Description of gradient vector and hessian matrix organization
+    - Matrix $A$ must be square symmetric, i.e. $n\times n$, with each 
+
+    $Q_A = x^T * A * x$
+    - where x is a vector $\begin{pmatrix} x\\ y \end{pmatrix}$ of length $n$
+- Gradient vector and hessian matrix organization
+    - Gradient vector is a vector of the first order partial derivatives
+    
+```math
+\nabla f = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y})
+```
+- Hessian matrix is an $n \times n$ matrix containing the second order partial derivatives 
+
+```math
+H_f = \begin{pmatrix} \frac{\partial ^2 f}{\partial x^2} \frac{\partial ^2 f}{\partial x \partial y} \\
+                        \frac{\partial ^2 f}{\partial y \partial x} \frac{\partial ^2 f}{\partial y^2}
+        \end{pmatrix}
+```
     - Hessian matrices which are indefinite are saddle points
     - hessian matrices which are negative definite are local maximum
     - hessian matrices which are positive definite are local minimum
 - Local linear approximations use taylor polynomial
-- Taylor polynomial
-    - T_n(f,x_0)(x) = sigma(i=0 to n) (f^(i)(x_0))/i! * (x-x_0)^i
+- Taylor polynomial formula
+```math
+T_n(f,x_0)(x) = \sum_{i=0}^{n}   \frac{f^{i}(x_0)}{i!} * (x-x_0)^i
+```
