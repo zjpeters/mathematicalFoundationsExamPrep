@@ -129,7 +129,7 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
 ## Table of trigonometric functions
 $$
 \begin{array}{ c | c | c | c | c | c }
-    &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\ 
+    &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\ \hline
 sin &   0   &   1/2 &   \sqrt{2}/2    &    \sqrt{3}/2   &   1   \\
 cos &   1   &   \sqrt{3}/2  &   \sqrt{2}/2  &   1/2 &   0   \\  
 tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  
