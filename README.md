@@ -46,7 +46,7 @@
     - present in exams: [2015A, 2015 retake]
 - Taylor polynomial
     - Present in exams: [2018A, 2020]
-## Potential information to include on mathematical foundations test sheet
+# Potential information to include on mathematical foundations test sheet
 -Compute the length of a vector: square root of the squares of each value in the vector
 ```math
 \lVert u \rVert = \sqrt{u_1^2 + u_2^2 + ... + u_i^2}
@@ -69,7 +69,7 @@
     $Q_A = x^T * A * x$
     - where x is a vector of length $n$
 ```math
-\begin{pmatrix} x\\ y \end{pmatrix}$ 
+\begin{pmatrix} x\\ y \end{pmatrix}
 ```
 - Gradient vector and hessian matrix organization
     - Gradient vector is a vector of the first order partial derivatives
@@ -78,17 +78,89 @@
 \nabla f = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y})
 ```
 - Hessian matrix is an $n \times n$ matrix containing the second order partial derivatives 
+    - Hessian matrices which are indefinite are saddle points
+    - hessian matrices which are negative definite are local maximum
+    - hessian matrices which are positive definite are local minimum
 
 ```math
 H_f = \begin{pmatrix} \frac{\partial ^2 f}{\partial x^2} \frac{\partial ^2 f}{\partial x \partial y} \\
                         \frac{\partial ^2 f}{\partial y \partial x} \frac{\partial ^2 f}{\partial y^2}
         \end{pmatrix}
 ```
-    - Hessian matrices which are indefinite are saddle points
-    - hessian matrices which are negative definite are local maximum
-    - hessian matrices which are positive definite are local minimum
-- Local linear approximations use taylor polynomial
+- Taylor series/Taylor polynomial
+    - If asked to find the linear approximation of a function, calculate the taylor series
+    - calculate to $T_n$ where $n$ is the greatest root of the function, i.e. for the function:
+    $ x^2 + 3x + 1$
+    
+    - You would calculate the $T_2$ 
 - Taylor polynomial formula
 ```math
 T_n(f,x_0)(x) = \sum_{i=0}^{n}   \frac{f^{i}(x_0)}{i!} * (x-x_0)^i
 ```
+
+- Chain rule of derivatives
+```math
+h(x) = f(g(x))\\
+
+h'(x) = f'(g(x)) * g'(x) 
+```
+
+- Product rule of derivatives
+```math
+h(x) = f(x) * g(x)\\
+h'(x) = f'(x) * g(x) + f(x) * g'(x)
+```
+- Integration by parts, inverse to the product rule
+```math
+\int u\partial v = uv - \int v \partial u
+```
+
+- Integration by substitution, inverse to the chain rule
+
+- Ordinary Differential Equations (ODEs)
+    - First order linear ODE, consider the inhomogeneous ODE:
+    $y'(x) + a(x)y(x) = \psi(x)$
+    - First, solve the homogeneous solution $y' + a(x)y = 0$, the solution is:
+    
+    $y(x) = ce^{-A(x)}$
+
+    - Where $A(x) = \int a(x)dx$, and $c$ is a a constant
+    - The particular solution $y^*(x)$ can be found by guessing (or systematically)
+## Table of trigonometric functions
+$$
+\begin{array}{ c | c | c | c | c | c }
+    &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\  \hline
+sin &   0   &   1/2 &   \sqrt{2}/2    &    \sqrt{3}/2   &   1   \\  \hline
+cos &   1   &   \sqrt{3}/2  &   \sqrt{2}/2  &   1/2 &   0   \\  \hline
+tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  \hline
+cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  \hline
+\end{array}
+$$
+- i.e. $sin(\pi/6) = 1/2$
+- Additionally, to calculate inverse functions such as $arcsin$, $arccos$, $arctan$, use the opposite direction, i.e. $arcsin(1/2) = \pi/6$
+
+## Table of derivatives
+$$
+\begin{array}{ c | c | c }
+function, f  &   derivative, f'   &   domain, I    \\  \hline  \hline
+c (constant)    &   0   &   {\rm I\!R}  \\  \hline
+x^\alpha, (\alpha \in {\rm I\!R})  &   \alpha x^{\alpha - 1}   &   ]0,\inf[ \\  \hline
+ln(x)   &   1/x &   ]0,\inf[    \\  \hline
+e^x &   e^x &   {\rm I\!R}  \\  \hline
+a^x &   a^xln(a)    &   {\rm I\!R}, a > 0 \\  \hline
+sin(x)  &   cos(x)  &   {\rm I\!R}  \\  \hline
+cos(x)  &   -sin(x) &   {\rm I\!R}  \\  \hline
+tan(x)  &   1/cos^2(x)  &   ](k-1/2)\pi, (k+1/2)\pi[, (k \in \Z)    \\  \hline
+cot(x)  &   -1/sin^2(x) &   ]k\pi, (k+1)\pi[, (k \in \Z)    \\  \hline
+arcsin(x)   &   1/(\sqrt{1-x^2})  &   ]-1,1[  \\  \hline
+arccos(x)   &   -1/(\sqrt{1-x^2}) &   ]-1,1[  \\  \hline
+arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\  \hline
+\end{array}
+$$
+## Trigonometric functions
+- Periodicity:  $sin(x+2\pi) = sin(x), cos(x+2\pi) = cos(x)$
+- Symmetry: $sin(-x) = -sin(x)$
+- Pythagorean theorem:
+$ sin^2(x) + cos^2(x) = 1 $
+- $sin(x+y) = sin(x)cos(y) + cos(x)sin(y)$
+- $cos(x+y) = cos(x)cos(y) - sin(x)sin(y)$
