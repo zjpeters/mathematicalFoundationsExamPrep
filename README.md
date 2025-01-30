@@ -140,7 +140,7 @@ cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\
 - Additionally, to calculate inverse functions such as $arcsin$, $arccos$, $arctan$, use the opposite direction, i.e. $arcsin(1/2) = \pi/6$
 
 ## Table of derivatives
-$$
+```math
 \begin{array}{ c | c | c }
 function, f  &   derivative, f'   &   domain, I    \\  
 c (constant)    &   0   &   {\rm I\!R}  \\
@@ -156,7 +156,7 @@ arcsin(x)   &   1/(\sqrt{1-x^2})  &   ]-1,1[  \\
 arccos(x)   &   -1/(\sqrt{1-x^2}) &   ]-1,1[  \\  
 arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ 
 \end{array}
-$$
+```
 ## Trigonometric functions
 - Periodicity:  $sin(x+2\pi) = sin(x), cos(x+2\pi) = cos(x)$
 - Symmetry: $sin(-x) = -sin(x)$
