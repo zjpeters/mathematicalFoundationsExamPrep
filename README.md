@@ -127,7 +127,7 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
     - Where $A(x) = \int a(x)dx$, and $c$ is a a constant
     - The particular solution $y^*(x)$ can be found by guessing (or systematically)
 ## Table of trigonometric functions
-$$
+```math
 \begin{array}{ c | c | c | c | c | c }
     &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\ 
 sin &   0   &   1/2 &   \sqrt{2}/2    &    \sqrt{3}/2   &   1   \\
@@ -135,7 +135,7 @@ cos &   1   &   \sqrt{3}/2  &   \sqrt{2}/2  &   1/2 &   0   \\
 tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  
 cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  
 \end{array}
-$$
+```
 - i.e. $sin(\pi/6) = 1/2$
 - Additionally, to calculate inverse functions such as $arcsin$, $arccos$, $arctan$, use the opposite direction, i.e. $arcsin(1/2) = \pi/6$
 
