@@ -129,11 +129,11 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
 ## Table of trigonometric functions
 ```math
 \begin{array}{ c | c | c | c | c | c }
-    &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\ 
-sin &   0   &   1/2 &   \sqrt{2}/2    &    \sqrt{3}/2   &   1   \\
-cos &   1   &   \sqrt{3}/2  &   \sqrt{2}/2  &   1/2 &   0   \\  
-tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  
-cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  
+    &   0   &   \pi /6  &   \pi /4  &   \pi /3  &   \pi /2  \\ \hline
+sin &   0   &   1/2 &   \sqrt{2}/2    &    \sqrt{3}/2   &   1   \\  \hline
+cos &   1   &   \sqrt{3}/2  &   \sqrt{2}/2  &   1/2 &   0   \\  \hline
+tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  \hline
+cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  \hline
 \end{array}
 ```
 - i.e. $sin(\pi/6) = 1/2$
