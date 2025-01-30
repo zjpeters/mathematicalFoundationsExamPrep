@@ -1,7 +1,7 @@
 # Topics covered on previous exams
 - Vectors
     - Compute length and angle of vectors
-    - Compute the products of $u*v^T$ and $u^T*v$, decide if two vectors are perpendicular,
+    - Compute the products of two vectors, decide if two vectors are perpendicular,
     - Show linear independence
     - write a vector as a linear combination of other vectors
     - normalize vector
@@ -12,10 +12,10 @@
     - Calculating determinant
     - inversion
     - Hurwitz criterion, finding a variable for which a matrix is pos or neg definite
-    - Find matrix A that defines linear map L_A
+    - Find matrix A that defines linear map $L_A$
     - Row echelon and row reduced forms
-    - Write quadratic form Q_C(x_1,x_2) associated with matrix C
-    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2019, 2020]
+    - Write quadratic form Q_C(x_1,x_2) of matrix C
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2019, 2020, 2021]
 - Computing eigenvalues and eigenvectors
     - Calculate characteristic polynomial
     - Verify that a vector is an eigenvector
@@ -25,17 +25,19 @@
     - whether they have solutions and how many (none, one, infinitely many)
     - Solve system of linear equations
     - present in exams: [2014, 2015A, 2015 retake]
-- Find complex numbers that solve equation
+- Find complex numbers that solve equation **probably not on exam**
     - present in exams: [2014]
 - Derivatives and integrals (definite and indefinite)
     - local linear approximations
     - present in exams: [2014, 2015A, 2015 retake, 2018, 2020, 2021]
 - Differential equations
+    - Ordinary Differential Equations (ODEs)
+    - Partial differential equations
     - Solving initial value problem
     - Finding particular solutions
     - finding general solution
     - Homogenous solutions
-    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2018A, 2019, 2020]
+    - present in exams: [2014, 2015A, 2015 retake, 2017, 2018, 2018A, 2019, 2020, 2021]
 - Partial derivatives
     - Find stationary points of f(x,y)
     - Find/verify critical points
@@ -45,7 +47,8 @@
 - Find the euler expression 
     - present in exams: [2015A, 2015 retake]
 - Taylor polynomial
-    - Present in exams: [2018A, 2020]
+    - Find local linear approximations of a function
+    - Present in exams: [2018A, 2020, 2021]
 # Potential information to include on mathematical foundations test sheet
 -Compute the length of a vector: square root of the squares of each value in the vector
 ```math
@@ -163,6 +166,6 @@ arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ \hline
 - Periodicity:  $sin(x+2\pi) = sin(x), cos(x+2\pi) = cos(x)$
 - Symmetry: $sin(-x) = -sin(x)$
 - Pythagorean theorem:
-$ sin^2(x) + cos^2(x) = 1 $
+$sin^2(x) + cos^2(x) = 1$
 - $sin(x+y) = sin(x)cos(y) + cos(x)sin(y)$
 - $cos(x+y) = cos(x)cos(y) - sin(x)sin(y)$
