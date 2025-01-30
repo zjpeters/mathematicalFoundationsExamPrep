@@ -158,7 +158,7 @@ arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ \hline
 \end{array}
 ```
 
-- In this table, $Z$ is $\Z$, meaning all integers, and ${\rm I\!R}$ is all real numbers
+- In this table, $Z$ is all integers, and R is all real numbers
 ## Trigonometric functions
 - Periodicity:  $sin(x+2\pi) = sin(x), cos(x+2\pi) = cos(x)$
 - Symmetry: $sin(-x) = -sin(x)$
