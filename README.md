@@ -143,7 +143,7 @@ $$
 $$
 \begin{array}{ c | c | c }
 function, f  &   derivative, f'   &   domain, I    \\  
-c (constant)    &   0   &   {\rm I\!R}  \\  \hline
+c (constant)    &   0   &   {\rm I\!R}  \\
 x^\alpha, (\alpha \in {\rm I\!R})  &   \alpha x^{\alpha - 1}   &   ]0,\inf[ \\  
 ln(x)   &   1/x &   ]0,\inf[    \\  
 e^x &   e^x &   {\rm I\!R}  \\  
