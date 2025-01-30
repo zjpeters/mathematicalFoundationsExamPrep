@@ -142,20 +142,22 @@ cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  \hline
 ## Table of derivatives
 ```math
 \begin{array}{ c | c | c }
-function, f  &   derivative, f'   &   domain, I    \\  
-c (constant)    &   0   &   {\rm I\!R}  \\
-x^\alpha, (\alpha \in {\rm I\!R})  &   \alpha x^{\alpha - 1}   &   ]0,\inf[ \\  
-ln(x)   &   1/x &   ]0,\inf[    \\  
-e^x &   e^x &   {\rm I\!R}  \\  
-a^x &   a^xln(a)    &   {\rm I\!R}, a > 0 \\  
-sin(x)  &   cos(x)  &   {\rm I\!R}  \\  
-cos(x)  &   -sin(x) &   {\rm I\!R}  \\  
-tan(x)  &   1/cos^2(x)  &   ](k-1/2)\pi, (k+1/2)\pi[, (k \in \Z)    \\  
-cot(x)  &   -1/sin^2(x) &   ]k\pi, (k+1)\pi[, (k \in \Z)    \\  
-arcsin(x)   &   1/(\sqrt{1-x^2})  &   ]-1,1[  \\  
-arccos(x)   &   -1/(\sqrt{1-x^2}) &   ]-1,1[  \\  
-arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ 
+function, f  &   derivative, f'   &   domain, I    \\  \hline
+c (constant)    &   0   &   {\rm I\!R}  \\  \hline
+x^\alpha, (\alpha \in {\rm I\!R})  &   \alpha x^{\alpha - 1}   &   ]0,\inf[ \\  \hline
+ln(x)   &   1/x &   ]0,\inf[    \\  \hline
+e^x &   e^x &   {\rm I\!R}  \\  \hline
+a^x &   a^xln(a)    &   {\rm I\!R}, a > 0 \\  \hline
+sin(x)  &   cos(x)  &   {\rm I\!R}  \\  \hline
+cos(x)  &   -sin(x) &   {\rm I\!R}  \\  \hline
+tan(x)  &   1/cos^2(x)  &   ](k-1/2)\pi, (k+1/2)\pi[, (k \in Z)    \\  \hline
+cot(x)  &   -1/sin^2(x) &   ]k\pi, (k+1)\pi[, (k \in Z)    \\  \hline
+arcsin(x)   &   1/(\sqrt{1-x^2})  &   ]-1,1[  \\  \hline
+arccos(x)   &   -1/(\sqrt{1-x^2}) &   ]-1,1[  \\  \hline
+arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ \hline
 \end{array}
+
+- In this table, $Z$ is $\Z$, meaning all integers, and ${\rm I\!R}$ is all real numbers
 ```
 ## Trigonometric functions
 - Periodicity:  $sin(x+2\pi) = sin(x), cos(x+2\pi) = cos(x)$
