@@ -11,6 +11,7 @@
     - transposition
     - Calculating determinant
     - inversion
+    - orthogonal
     - Hurwitz criterion, finding a variable for which a matrix is pos or neg definite
     - Find matrix A that defines linear map $L_A$
     - Row echelon and row reduced forms
@@ -56,14 +57,32 @@
 ```
 - Compute the angle between two vectors: product of the vectors divided by the product of the lengths
 ```math
-\arccos (\frac{a*b}{\lVert a \rVert * \lVert b \rVert})
+\arccos (\frac{a * b}{\lVert a \rVert * \lVert b \rVert})
 ```
+- For a $2 \times 2$ matrix $A$ such that 
+```math
+\begin{pmatrix}
+a   &   b   \\
+c   &   d   \\
+\end{pmatrix} 
+```
+$det(A) = ad-bc$
+- For a $3 \times 3$ matrix $A$ such that
+```math
+\begin{pmatrix}
+a_{11}    &   a_{12}    &   a_{13}    \\
+a_{21}    &   a_{22}    &   a_{23}    \\
+a_{31}    &   a_{32}    &   a_{33}    \\
+\end{pmatrix}
+```
+$det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31})$
 - equation for characteristic polynomial
     - the characteristic polynomial of a matrix $A$ is the determinant of $A$ minus $\lambda$ times the identity matrix    
     $P(\lambda) = det(A - \lambda * I)$
 
 
-    - the eigenvalues are the roots of the char. polynomial, i.e. the solutions to $\lambda$
+    - The eigenvalues are the roots of the char. polynomial, i.e. the solutions to $\lambda$
+    - An $n \times n$ matrix is diagonalizable if it has $n$ different real eigenvalues
 - for matrix multiplication ($A * B = C$) the number of columns in the first matrix ($A$) must equal the number or rows in the second matrix ($B$), the output ($C$) has the number or rows of $A$ and the number of columns of $B$
     - multiply and add rows of A with columns of B
 - quadratic form of matrix
@@ -76,6 +95,7 @@
 ```
 - Gradient vector and hessian matrix organization
     - Gradient vector is a vector of the first order partial derivatives
+    - Stationary points are those where $\nabla f(x,y) = (0,0)$
     
 ```math
 \nabla f = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y})
@@ -93,7 +113,7 @@ H_f = \begin{pmatrix} \frac{\partial ^2 f}{\partial x^2} \frac{\partial ^2 f}{\p
 - Taylor series/Taylor polynomial
     - If asked to find the linear approximation of a function, calculate the taylor series
     - calculate to $T_n$ where $n$ is the greatest root of the function, i.e. for the function:
-    $ x^2 + 3x + 1$
+    $x^2 + 3x + 1$
     
     - You would calculate the $T_2$ 
 - Taylor polynomial formula
@@ -128,7 +148,17 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
     $y(x) = ce^{-A(x)}$
 
     - Where $A(x) = \int a(x)dx$, and $c$ is a a constant
-    - The particular solution $y^*(x)$ can be found by guessing (or systematically)
+    - The particular solution $y^*(x)$ can be found by guessing or systematically as such, find:
+
+    $W(x) = \int \psi (x)e^{A(x)} \partial x$
+
+    - Then:
+
+    $y^*(x) = W(x)e^{-A(x)}$
+
+    - Alternately, with the homogeneous solution $y_h(x)$:
+
+    $y^*(x) = y_h(x) \int \frac{\psi(x)}{y_h(x)}\partial x$
 ## Table of trigonometric functions
 ```math
 \begin{array}{ c | c | c | c | c | c }
@@ -139,8 +169,9 @@ tan &   0   &   \sqrt{3}/3  &   1   &   \sqrt{3}    &   --- \\  \hline
 cot &   --- &   \sqrt{3}    &   1   &   \sqrt{3}/3  &   0   \\  \hline
 \end{array}
 ```
+- Where $0 = 0\degree, \pi/6 = 30\degree, \pi/4 = 45\degree, \pi/3 = 60\degree, \pi/2 = 90\degree$
 - i.e. $sin(\pi/6) = 1/2$
-- Additionally, to calculate inverse functions such as $arcsin$, $arccos$, $arctan$, use the opposite direction, i.e. $arcsin(1/2) = \pi/6$
+- To calculate inverse functions such as $arcsin$, $arccos$, $arctan$, use the opposite direction, i.e. $arcsin(1/2) = \pi/6$
 
 ## Table of derivatives
 ```math
@@ -169,3 +200,15 @@ arctan(x)   &   1/(1+x^2)   &   {\rm I\!R}  \\ \hline
 $sin^2(x) + cos^2(x) = 1$
 - $sin(x+y) = sin(x)cos(y) + cos(x)sin(y)$
 - $cos(x+y) = cos(x)cos(y) - sin(x)sin(y)$
+- $tan(x) = \frac{sin(x)}{cos(x)}$
+- $cot(x) = \frac{cos(x)}{sin(x)}$
+## Exponential functions
+```math
+\begin{array}{ c | c }
+(a^b)^c = a^bc  &   ln(\sqrt{e}) = 1/2  \\  \hline
+a^{\frac{b}{c}} = \sqrt[c]{a^b} &   ln(e^n) = n \\  \hline
+a^b * a^c = a^{b+c}   &   ln(1) = ln(e^0) = 0   \\  \hline
+a^{-b} = \frac{1}{a^{-b}}   &   ln(0)  does not exist   \\  \hline
+
+\end{array}
+```
