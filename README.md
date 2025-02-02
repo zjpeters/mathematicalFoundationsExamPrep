@@ -51,6 +51,27 @@
     - Find local linear approximations of a function
     - Present in exams: [2018A, 2020, 2021]
 # Potential information to include on mathematical foundations test sheet
+- Matrix multiplication, for $C=AB$ where $A$ is $m \times n$, and $B$ is $n \times p$:
+```math
+A = \begin{pmatrix}
+a_{11}    &   a_{12}    &   a_{13}    \\
+a_{21}    &   a_{22}    &   a_{23}    \\
+a_{31}    &   a_{32}    &   a_{33}
+\end{pmatrix},
+B = \begin{pmatrix}
+b_{11}    &   b_{12}    \\
+b_{21}    &   b_{22}    \\
+b_{31}    &   b_{32}
+\end{pmatrix}
+```
+then $C$ is $m \times p$:
+```math
+C = \begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}    &   a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}   \\
+a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}    &   a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}    \\
+a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}    &   a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}
+\end{pmatrix}
+```
 -Compute the length of a vector: square root of the squares of each value in the vector
 ```math
 \lVert u \rVert = \sqrt{u_1^2 + u_2^2 + ... + u_i^2}
@@ -63,7 +84,7 @@
 ```math
 \begin{pmatrix}
 a   &   b   \\
-c   &   d   \\
+c   &   d
 \end{pmatrix} 
 ```
 $det(A) = ad-bc$
@@ -72,7 +93,7 @@ $det(A) = ad-bc$
 \begin{pmatrix}
 a_{11}    &   a_{12}    &   a_{13}    \\
 a_{21}    &   a_{22}    &   a_{23}    \\
-a_{31}    &   a_{32}    &   a_{33}    \\
+a_{31}    &   a_{32}    &   a_{33}
 \end{pmatrix}
 ```
 $det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{31}) + a_{13}(a_{21}a_{32} - a_{22}a_{31})$
@@ -143,12 +164,12 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
 - Ordinary Differential Equations (ODEs)
     - First order linear ODE, consider the inhomogeneous ODE:
     $y'(x) + a(x)y(x) = \psi(x)$
-    - First, solve the homogeneous solution $y' + a(x)y = 0$, the solution is:
+    - Step 1, solve the homogeneous solution $y' + a(x)y = 0$, the solution is:
     
     $y(x) = ce^{-A(x)}$
 
     - Where $A(x) = \int a(x)dx$, and $c$ is a a constant
-    - The particular solution $y^*(x)$ can be found by guessing or systematically as such, find:
+    - Step 2, solve the particular solution $y^*(x)$ can be found by guessing or systematically as such, find:
 
     $W(x) = \int \psi (x)e^{A(x)} \partial x$
 
@@ -159,6 +180,14 @@ h'(x) = f'(x) * g(x) + f(x) * g'(x)
     - Alternately, with the homogeneous solution $y_h(x)$:
 
     $y^*(x) = y_h(x) \int \frac{\psi(x)}{y_h(x)}\partial x$
+
+    - To guess the particular solution, if $\psi (x)$ is a polynomial guess a polynomial, if it is an exponential guess an exponential, if it is trigonometric guess a trigonometric expression, i.e.:
+    
+    $\psi (x) = 3x + 4$ guess $y^* = Ax + B$
+
+    $\psi (x) = e^3x$ guess $y^* = Ae^3x$
+
+    $\psi (x) = sin(3x)$ guess $y^* = Asin(3x) + Bcos(3x)$
 ## Table of trigonometric functions
 ```math
 \begin{array}{ c | c | c | c | c | c }
