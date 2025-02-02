@@ -51,27 +51,7 @@
     - Find local linear approximations of a function
     - Present in exams: [2018A, 2020, 2021]
 # Potential information to include on mathematical foundations test sheet
-- Matrix multiplication, for $C=AB$ where $A$ is $m \times n$, and $B$ is $n \times p$:
-```math
-A = \begin{pmatrix}
-a_{11}    &   a_{12}    &   a_{13}    \\
-a_{21}    &   a_{22}    &   a_{23}    \\
-a_{31}    &   a_{32}    &   a_{33}
-\end{pmatrix},
-B = \begin{pmatrix}
-b_{11}    &   b_{12}    \\
-b_{21}    &   b_{22}    \\
-b_{31}    &   b_{32}
-\end{pmatrix}
-```
-then $C$ is $m \times p$:
-```math
-C = \begin{pmatrix}
-a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}    &   a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}   \\
-a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}    &   a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}    \\
-a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}    &   a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}
-\end{pmatrix}
-```
+
 -Compute the length of a vector: square root of the squares of each value in the vector
 ```math
 \lVert u \rVert = \sqrt{u_1^2 + u_2^2 + ... + u_i^2}
@@ -80,6 +60,11 @@ a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}    &   a_{31}b_{12} + a_{32}b_{22} + 
 ```math
 \arccos (\frac{a * b}{\lVert a \rVert * \lVert b \rVert})
 ```
+- $u$ and $v$ are linearly dependent if:
+
+$\lambda _1 u + \lambda _2 v = 0$
+
+- where $\lambda _1$ and $\lambda _2$ are not equal to 0
 - For a $2 \times 2$ matrix $A$ such that 
 ```math
 \begin{pmatrix}
@@ -106,6 +91,27 @@ $det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{3
     - An $n \times n$ matrix is diagonalizable if it has $n$ different real eigenvalues
 - for matrix multiplication ($A * B = C$) the number of columns in the first matrix ($A$) must equal the number or rows in the second matrix ($B$), the output ($C$) has the number or rows of $A$ and the number of columns of $B$
     - multiply and add rows of A with columns of B
+    - Matrix multiplication,for $C=AB$ where $A$ is $m \times n$, and $B$ is $n \times p$:
+```math
+A = \begin{pmatrix}
+a_{11}    &   a_{12}    &   a_{13}    \\
+a_{21}    &   a_{22}    &   a_{23}    \\
+a_{31}    &   a_{32}    &   a_{33}
+\end{pmatrix},
+B = \begin{pmatrix}
+b_{11}    &   b_{12}    \\
+b_{21}    &   b_{22}    \\
+b_{31}    &   b_{32}
+\end{pmatrix}
+```
+then $C$ is $m \times p$:
+```math
+C = \begin{pmatrix}
+a_{11}b_{11} + a_{12}b_{21} + a_{13}b_{31}    &   a_{11}b_{12} + a_{12}b_{22} + a_{13}b_{32}   \\
+a_{21}b_{11} + a_{22}b_{21} + a_{23}b_{31}    &   a_{21}b_{12} + a_{22}b_{22} + a_{23}b_{32}    \\
+a_{31}b_{11} + a_{32}b_{21} + a_{33}b_{31}    &   a_{31}b_{12} + a_{32}b_{22} + a_{33}b_{32}
+\end{pmatrix}
+```
 - quadratic form of matrix
     - Matrix $A$ must be square symmetric, i.e. $n\times n$, with each 
 
