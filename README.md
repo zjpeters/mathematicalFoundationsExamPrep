@@ -243,7 +243,7 @@ $sin^2(x) + cos^2(x) = 1$
 (a^b)^c = a^{bc}  &   ln(\sqrt{e}) = 1/2  \\  \hline
 a^{\frac{b}{c}} = \sqrt[c]{a^b} &   ln(e^n) = n \\  \hline
 a^b * a^c = a^{b+c}   &   ln(1) = ln(e^0) = 0   \\  \hline
-a^{-b} = \frac{1}{a^{-b}}   &   ln(0)  \text{ does not exist}   \\  \hline
+a^{-b} = \frac{1}{a^{b}}   &   ln(0)  \text{ does not exist}   \\  \hline
 
 \end{array}
 ```
