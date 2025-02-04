@@ -89,6 +89,11 @@ $det(A) = a_{11}(a_{22}a_{33} - a_{23}a_{32}) - a_{12}(a_{21}a_{33} - a_{23}a_{3
 
     - The eigenvalues are the roots of the char. polynomial, i.e. the solutions to $\lambda$
     - An $n \times n$ matrix is diagonalizable if it has $n$ different real eigenvalues
+    - A matrix is positive definite if all eigenvalues are $> 0$
+    - A matrix is positive semi-definite if all eigenvalues are $\ge 0$
+    - A matrix is negative definite if all eigenvalues are $< 0$
+    - A matrix is negative semi-definite if all eigenvalues are $\le 0$
+    - If none of the above are true, matrix is indefinite
 - for matrix multiplication ($A * B = C$) the number of columns in the first matrix ($A$) must equal the number or rows in the second matrix ($B$), the output ($C$) has the number or rows of $A$ and the number of columns of $B$
     - multiply and add rows of A with columns of B
     - Matrix multiplication,for $C=AB$ where $A$ is $m \times n$, and $B$ is $n \times p$:
