@@ -153,19 +153,23 @@ H_f = \begin{pmatrix} \frac{\partial ^2 f}{\partial x^2} \frac{\partial ^2 f}{\p
 T_n(f,x_0)(x) = \sum_{i=0}^{n}   \frac{f^{i}(x_0)}{i!} * (x-x_0)^i
 ```
 
-- Chain rule of derivatives
+- Chain rule of derivatives, for equations such as:
 ```math
 h(x) = f(g(x))
 ```
+
+The derivative can be calculated:
 
 ```math
 h'(x) = f'(g(x)) * g'(x) 
 ```
 
-- Product rule of derivatives
+- Product rule of derivatives, for equations such as:
 ```math
 h(x) = f(x) * g(x)
 ```
+
+The derivative can be calculated:
 
 ```math
 h'(x) = f'(x) * g(x) + f(x) * g'(x)
