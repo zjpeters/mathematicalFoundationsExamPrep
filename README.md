@@ -157,6 +157,7 @@ T_n(f,x_0)(x) = \sum_{i=0}^{n}   \frac{f^{i}(x_0)}{i!} * (x-x_0)^i
 ```math
 h(x) = f(g(x))
 ```
+
 ```math
 h'(x) = f'(g(x)) * g'(x) 
 ```
@@ -165,6 +166,7 @@ h'(x) = f'(g(x)) * g'(x)
 ```math
 h(x) = f(x) * g(x)
 ```
+
 ```math
 h'(x) = f'(x) * g(x) + f(x) * g'(x)
 ```
