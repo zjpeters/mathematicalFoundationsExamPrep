@@ -155,14 +155,17 @@ T_n(f,x_0)(x) = \sum_{i=0}^{n}   \frac{f^{i}(x_0)}{i!} * (x-x_0)^i
 
 - Chain rule of derivatives
 ```math
-h(x) = f(g(x))\\
-
+h(x) = f(g(x))
+```
+```math
 h'(x) = f'(g(x)) * g'(x) 
 ```
 
 - Product rule of derivatives
 ```math
-h(x) = f(x) * g(x)\\
+h(x) = f(x) * g(x)
+```
+```math
 h'(x) = f'(x) * g(x) + f(x) * g'(x)
 ```
 - Integration by parts, inverse to the product rule
