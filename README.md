@@ -1,7 +1,7 @@
 # Topics covered on previous exams
 - Vectors
     - Compute length and angle of vectors
-    - Compute the products of two vectors, decide if two vectors are orthogonal,
+    - Compute the products of two vectors, decide if two vectors are orthogonal
     - Show linear independence
     - write a vector as a linear combination of other vectors
     - normalize vector
